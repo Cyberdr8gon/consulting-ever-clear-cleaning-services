@@ -89,64 +89,66 @@
       <div class="services-title">
         <h1>Services</h1>
       </div>
-      <div class="window-service-card">
-        <h2>Window Cleaning</h2>
-        <p>
-          Utilizing only highly filtered and de-ionized water, we clean your windows with no chemicals! We can go anywhere up to 3 stories high with our water-fed pole. We completely remove the dirt, and only clean water is left to evaporate. This makes for a lasting shine with no soap residue that mixes with rain to stain at a later date. We love residential customers as well as commercial customers. Everyone can benefit from a better looking home or business! All screens will be brushed, 
-        </p>
-        <div class="basic">
-          $3 per pane average 
+      <div class="card-collection">
+        <div class="window-service-card">
+          <h2>Window Cleaning</h2>
+          <p>
+            Utilizing only highly filtered and de-ionized water, we clean your windows with no chemicals! We can go anywhere up to 3 stories high with our water-fed pole. We completely remove the dirt, and only clean water is left to evaporate. This makes for a lasting shine with no soap residue that mixes with rain to stain at a later date. We love residential customers as well as commercial customers. Everyone can benefit from a better looking home or business! All screens will be brushed, 
+          </p>
+          <div class="basic">
+            $3 per pane average 
+          </div>
+          <div class="standard">
+            $5 per pane average
+          </div>
+          <div class="vip">
+            $8 per pane average
+          </div>
         </div>
-        <div class="standard">
-          $5 per pane average
+        <div class="service-card">
+          <h2>Solar Panel Cleaning</h2>
+          <p>
+            Solar panels get much less effective when they get dirty. What looks like even just a small coating of dust makes solar panels less effective, decreasing the amount of energy they can produce for you. What is worse, is that the companies that sell you these only test completely clean solar panels when projecting energy production of the panels. 
+          </p>
+          <div class="pricing">
+            $5 per window
+          </div>
         </div>
-        <div class="vip">
-          $8 per pane average
+        <div class="service-card">
+          <h2>Construction Window Clean Up</h2>
+          <p>
+            Cleaning up windows after construction is the last thing you want to do. So let us do it for you! We remove any tape, stickers, paint, stucco, and other construction debris. That way, the windows look brand new like they should!
+          </p>
+          <div class="pricing">
+            Call us for a quote!
+          </div>
         </div>
-      </div>
-      <div class="service-card">
-        <h2>Solar Panel Cleaning</h2>
-        <p>
-          Solar panels get much less effective when they get dirty. What looks like even just a small coating of dust makes solar panels less effective, decreasing the amount of energy they can produce for you. What is worse, is that the companies that sell you these only test completely clean solar panels when projecting energy production of the panels. 
-        </p>
-        <div class="pricing">
-          $5 per window
+        <div class="service-card">
+          <h2>Awning Cleaning</h2>
+          <p>
+            Cleaning your awning lengthens its life and, more importantly, is a HUGE step in improving how a property looks. This is even more paramount for commercial customers, where a clean awning can make a your store that much more inviting and bring more customers in. 
+          </p>
+          <div class="pricing">
+            $5 per window
+          </div>
         </div>
-      </div>
-      <div class="service-card">
-        <h2>Construction Window Clean Up</h2>
-        <p>
-          Cleaning up windows after construction is the last thing you want to do. So let us do it for you! We remove any tape, stickers, paint, stucco, and other construction debris. That way, the windows look brand new like they should!
-        </p>
-        <div class="pricing">
-          Call us for a quote!
+        <div class="service-card">
+          <h2>Pressure Washing</h2>
+          <p>
+            Pressure washing your house really makes the paint look how it naturally should, nearly as good as a repaint and at much, much less the cost. We can pressure wash houses, decks, deck furniture, patios, driveways, garage doors, and more! Just get in touch with us and we can talk more!
+          </p>
+          <div class="pricing">
+            $5 per window
+          </div>
         </div>
-      </div>
-      <div class="service-card">
-        <h2>Awning Cleaning</h2>
-        <p>
-          Cleaning your awning lengthens its life and, more importantly, is a HUGE step in improving how a property looks. This is even more paramount for commercial customers, where a clean awning can make a your store that much more inviting and bring more customers in. 
-        </p>
-        <div class="pricing">
-          $5 per window
-        </div>
-      </div>
-      <div class="service-card">
-        <h2>Pressure Washing</h2>
-        <p>
-          Pressure washing your house really makes the paint look how it naturally should, nearly as good as a repaint and at much, much less the cost. We can pressure wash houses, decks, deck furniture, patios, driveways, garage doors, and more! Just get in touch with us and we can talk more!
-        </p>
-        <div class="pricing">
-          $5 per window
-        </div>
-      </div>
-      <div class="service-card">
-        <h2>Gutter Cleaning</h2>
-        <p>
-          Every home owner knows they have to clean the gutters, but it's such a dreadful task that few people do it regularly. Luckily, we are happy to do it for you, preventing termites and pests from entering your home, preventing damage to your roof, walls and foundation, and avoiding the need for expensive repairs. 
-        </p>
-        <div class="pricing">
-          $5 per window
+        <div class="service-card">
+          <h2>Gutter Cleaning</h2>
+          <p>
+            Every home owner knows they have to clean the gutters, but it's such a dreadful task that few people do it regularly. Luckily, we are happy to do it for you, preventing termites and pests from entering your home, preventing damage to your roof, walls and foundation, and avoiding the need for expensive repairs. 
+          </p>
+          <div class="pricing">
+            $5 per window
+          </div>
         </div>
       </div>
     </section>
@@ -311,6 +313,47 @@
   }
 
 
+  .services-container {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+  }
+
+  .services-title {
+    font-size: 140%;
+  }
+
+
+  .card-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .service-card {
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+  }
+
+  .service-card h2 {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    margin: 0;
+  }
+
+  .service-card p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-card .pricing {
+    margin-top: 10px;
+    font-size: 110%;
+  }
 
 </style>
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Merriweather|Quicksand" rel="stylesheet">
