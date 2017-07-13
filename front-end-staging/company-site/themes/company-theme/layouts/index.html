@@ -36,7 +36,7 @@
         </div>
       </a>
       <div class="contact-banner-desktop">
-        123-456-7890
+        970-683-1688
       </div>
     </div>
     <nav>
@@ -67,7 +67,7 @@
     </nav>
   </header>
   <div class="contact-banner-mobile">
-    Contact us at 123-456-7890
+    Contact us at 970-683-1688
   </div>
   <main>
     <section class="splash-container">
@@ -231,31 +231,62 @@
           </amp-img>
         </div>
         <div class="about-us-text">
+          <p>
           We are a family-owned, local company that specializes in residential and commercial window cleaning and other forms of cleaning related property maintenance. We want to understand your needs and provide a level of service far and above what people expect. We are fully insured so you can have the piece of mind that all of your investments will be well taken care of. 
+          </p>
         </div>
       </div>
     </section>
     <section class="contact-us-container">
-      <h1>Contact Us</h1>
-      <p>
-        Phone number: 123-456-7890
-      </p>
-      <p>
-        Email: cool@replacethis.com
-      </p>
+      <div class="contact-us-title">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-us-flex-container">
+        <div class="contact-us-testimonials">
+          <h3>Testimonials</h3>
+          <blockquote>
+            Lonnie at Ever Clear Window Cleaning was thorough and professional. I loved that he wore booties in my house and he walked the premises with me when he was done to make sure I was 100% satisfied. I will definitely use them for all my window cleaning needs!
+            <cite>Suzie S.</cite>
+          </blockquote>
+          <blockquote>
+            You do a great job! Very courteous and meticulous. I couldn’t be happier.
+            <cite>Steve B.</cite>
+          </blockquote>
+          <blockquote>
+            Your service is top notch! My neighbors saw how great they turned out and ended up scheduling an appointment too!
+            <cite>Dee C.</cite>
+          </blockquote>
+        </div>
+        <div class="contact-us-conversion-point">
+          <p>
+            <b>Drop us a line! We are always happy to hear from you!</b>
+            <br/>
+            We can give you a quote, set up a meeting, etc. 
+          </p>
+          <p>
+            <b>Phone number:</b> 970-683-1688
+          </p>
+          <p>
+            <b>Email:</b> lonnie@everclearwindowsgj.com
+          </p>
+          <p>
+            <b>Business Hours:</b>
+            <br/>
+            Monday-Saturday: 8am - 6pm
+            <br/>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
     </section>
     <section class="blog-container">
       
     </sections>
   </main>
   <footer>
-    <p>
-      123-456-7890 
-    </p>
-    <p>
-      cool@replacethis.com
-    </p>
-
+    <p> 970-683-1688 </p>
+    <p> lonnie@everclearwindowsgj.com </p>
+    <p>Website built by Sam Bateman</p>
   </footer>
 
 </body>
@@ -315,7 +346,7 @@
     font-size: 18px;
     padding: 0;
     margin: 0;
-    color: rgb(48, 103, 154);
+    color: #30BCED;
   }
 
   header nav {
@@ -353,9 +384,10 @@
     margin: auto;
   }
 
-  main section {
-    min-height: 100vh;
+  section:not(:first-child) {
+    margin-top: 90px;
   }
+
 
   .splash-container {
     display: flex;
@@ -363,27 +395,25 @@
     align-items: center;
 
     height: 100vh;
-
-    
   }
 
   .splash-container-text {
     font-family: 'Quicksand', sans-serif;
-    width: 300px;
+    width: 340px;
   }
 
   .splash-container-text h2 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .splash-container-text h3 {
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .splash-container-text-contact {
     text-align: center;
     padding: 20px 30px ;
-    background-color: blue;
+    background-color: #0A369D;
     width: 100px;
     font-size: 18px;
     color: white;
@@ -474,32 +504,118 @@
   }
 
   .about-us-container {
-    margin-top: 30px;
+    margin-top: 100px;
     font-family: 'Quicksand', sans-serif;
-    min-height: 100vh;
+  }
+
+  .about-us-title {
+    font-size: 140%;
   }
 
   .about-us-flex-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .about-us-text {
-    width: 340px;
+    width: 400px;
     background-color: white;
-    margin: 20px;
     padding: 20px 40px 20px 20px;
     box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+    font-size: 110%;
   }
 
   .about-us-img {
-    max-width: 400px;
-    min-width: 350px;
+    min-width: 500px;
   }
 
   .about-us-img amp-img {
     box-shadow: 10px 10px 10px rgba(0,0,0,.2);
   }
+
+  .contact-us-container {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .contact-us-title {
+    font-size: 140%;
+  }
+
+  .contact-us-flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contact-us-testimonials {
+    background-color: white;
+    width: 400px
+    background-color: white;
+    padding: 20px 40px 20px 35px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+    font-size: 110%;
+    margin: 20px;
+  }
+
+  .contact-us-conversion-point {
+    background-color: white;
+    width: 390px;
+    background-color: white;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+    font-size: 110%;
+    margin: 20px;
+  }
+
+  blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+  }
+
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+  }
+
+  blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+   
+  blockquote cite:before {
+    content: "\2014 \2009";
+  }
+
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #303036;
+  }
+
+  footer p {
+    padding: 0px 50px;
+    color: #30BCED;
+  }
+
 
 </style>
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Merriweather|Quicksand" rel="stylesheet">
