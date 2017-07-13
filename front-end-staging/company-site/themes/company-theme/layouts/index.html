@@ -73,7 +73,7 @@
     <section class="splash-container">
       <div>
         <iframe id="ytplayer" type="text/html" width="500" height="281.25"
-          src="https://www.youtube.com/embed/QH2-TGUlwu4?controls=0&modestbranding=1&playsinline=1"
+          src="https://www.youtube.com/embed/jnKCejQ3qgU?controls=0&modestbranding=1&playsinline=1"
           frameborder="0" allowfullscreen>
         </iframe>
       </div>
@@ -93,16 +93,74 @@
         <div class="window-service-card">
           <h2>Window Cleaning</h2>
           <p>
-            Utilizing only highly filtered and de-ionized water, we clean your windows with no chemicals! We can go anywhere up to 3 stories high with our water-fed pole. We completely remove the dirt, and only clean water is left to evaporate. This makes for a lasting shine with no soap residue that mixes with rain to stain at a later date. We love residential customers as well as commercial customers. Everyone can benefit from a better looking home or business! All screens will be brushed, 
+            Utilizing only highly filtered and de-ionized water, we clean your windows with no chemicals! We can go anywhere up to 3 stories high with our water-fed pole. We completely remove the dirt, and only clean water is left to evaporate. This makes for a lasting shine with no soap residue that mixes with rain to stain at a later date. We love residential customers as well as commercial customers. Everyone can benefit from a better looking home or business!
           </p>
-          <div class="basic">
-            $3 per pane average 
+          <div class="window-service-card-levels">
+            <div class="basic">
+              <h3>Basic</h3>
+              $3 per pane average 
+              <div class="details">
+                <br/>
+                <b>Includes</b>
+                <ul>
+                  <li>All Exterior Windows</li>
+                  <li>Screens Brushed</li>
+                  <li>Razor/Super Fine Wool: Major Spots</li>
+                </ul>
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="standard">
+              <h3>Standard</h3>
+              $5 per pane average
+              <div class="details">
+                <br/>
+                <b>Includes</b>
+                <ul>
+                  <li>Everything at the Basic level</li>
+                  <li>Interior Windows Cleaned</li>
+                  <li>Sills Brushed</li>
+                  <li>Razor/Super Fine Wool: Most Spots</li>
+                </ul>
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="vip">
+              <h3>VIP</h3>
+              $8 per pane average
+              <div class="details">
+                <br/>
+                <b>Includes</b>
+                <ul>
+                  <li>Everything at the Standard Level</li>
+                  <li>Tract Brushed</li>
+                  <li>Screens Soaped and Dried</li>
+                  <li>Brushing of Cobwebs from Entries</li>
+                  <li>Razor/Super Fine Wool: All Spots</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="standard">
-            $5 per pane average
+        </div>
+        <div class="service-card">
+          <h2>Window Cleaning Add-ons</h2>
+          <div class="pricing">
+            <p>
+            Hard Water Treatment:
+            </p> 
+            $10 per pane
           </div>
-          <div class="vip">
-            $8 per pane average
+          <div class="pricing">
+            <p>
+            Additional Charge for French Windows:
+            </p> 
+            $1.50 per pane
+          </div>
+          <div class="pricing">
+            <p>
+            Additional Charge for Second Floor Windows:
+            </p> 
+            $2 per pane
           </div>
         </div>
         <div class="service-card">
@@ -111,7 +169,7 @@
             Solar panels get much less effective when they get dirty. What looks like even just a small coating of dust makes solar panels less effective, decreasing the amount of energy they can produce for you. What is worse, is that the companies that sell you these only test completely clean solar panels when projecting energy production of the panels. 
           </p>
           <div class="pricing">
-            $5 per window
+            $5 per panel 
           </div>
         </div>
         <div class="service-card">
@@ -129,7 +187,7 @@
             Cleaning your awning lengthens its life and, more importantly, is a HUGE step in improving how a property looks. This is even more paramount for commercial customers, where a clean awning can make a your store that much more inviting and bring more customers in. 
           </p>
           <div class="pricing">
-            $5 per window
+            Call us for a free estimate! In general, $1 to $2 per square foot
           </div>
         </div>
         <div class="service-card">
@@ -138,7 +196,7 @@
             Pressure washing your house really makes the paint look how it naturally should, nearly as good as a repaint and at much, much less the cost. We can pressure wash houses, decks, deck furniture, patios, driveways, garage doors, and more! Just get in touch with us and we can talk more!
           </p>
           <div class="pricing">
-            $5 per window
+            Flat Rates based on the Surface. Call us!
           </div>
         </div>
         <div class="service-card">
@@ -147,8 +205,15 @@
             Every home owner knows they have to clean the gutters, but it's such a dreadful task that few people do it regularly. Luckily, we are happy to do it for you, preventing termites and pests from entering your home, preventing damage to your roof, walls and foundation, and avoiding the need for expensive repairs. 
           </p>
           <div class="pricing">
-            $5 per window
+            $100 50 sq feet or less
+            <br/> 
+            $150 50-100 sq feet or less
+            <br/>
+            Additional $50 for every 100 sq feet
           </div>
+        </div>
+        <div>
+          *Obviously, all of the listed service prices are only estimates and if a job has unforseen circumstances it might be different.
         </div>
       </div>
     </section>
@@ -156,7 +221,7 @@
       <div class="about-us-title">
         <h1>About Us</h1>
       </div>
-      <div>
+      <div class="about-us-flex-container">
         <div class="about-us-image"></div>
         <div class="about-us-text">
           We are a family-owned, local company that specializes in residential and commercial window cleaning and other forms of cleaning related property maintenance. We want to understand your needs and provide a level of service far and above what people expect. We are fully insured so you can have the piece of mind that all of your investments will be well taken care of. 
@@ -188,6 +253,10 @@
 
 </body>
 <style>
+  /*Normalize.css*/
+  /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+  /*Non-vendor css*/
   html, body {
     width: 100vw;
     height: 100vh;
@@ -198,6 +267,8 @@
 
   p {
     font-family: 'EB Garamond', serif;
+    line-height: 140%;
+    font-size: 110%;
   }
 
   .contact-banner-mobile {
@@ -274,6 +345,10 @@
     margin: auto;
   }
 
+  main section {
+    min-height: 100vh;
+  }
+
   .splash-container {
     display: flex;
     justify-content: space-around;
@@ -321,6 +396,7 @@
   .services-title {
     font-size: 140%;
   }
+  
 
 
   .card-collection {
@@ -329,10 +405,43 @@
     justify-content: space-around;
   }
 
+  .window-service-card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+  }
+
+  .window-service-card-levels {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .window-service-card-levels basic, .standard, .vip {
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .window-service-card-levels .basic ul, .standard ul, .vip ul {
+    margin-left: 0;
+    padding-left: 0px;
+    list-style-type: circle;
+  }
+  .vertical-line {
+    border: 1px solid rgba(0,0,0,.1);
+    bottom: 20%;
+    top: 20%;
+  }
+
+  
+
 
   .service-card {
-    width: 300px;
-    height: 250px;
+    width: 340px;
+    height: 280px;
     background-color: white;
     margin: 20px;
     padding: 20px 40px 20px 20px;
@@ -348,11 +457,18 @@
   .service-card p {
     padding: 0;
     margin: 0;
+
   }
   
   .service-card .pricing {
     margin-top: 10px;
     font-size: 110%;
+  }
+
+  .about-us-container {
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
   }
 
 </style>
