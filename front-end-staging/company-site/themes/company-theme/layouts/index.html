@@ -222,7 +222,14 @@
         <h1>About Us</h1>
       </div>
       <div class="about-us-flex-container">
-        <div class="about-us-image"></div>
+        <div class="about-us-img">
+          <amp-img alt="team photo"
+                   src="img/img-placeholder.png"
+                   layout="responsive"
+                   width="640"
+                   height="427">
+          </amp-img>
+        </div>
         <div class="about-us-text">
           We are a family-owned, local company that specializes in residential and commercial window cleaning and other forms of cleaning related property maintenance. We want to understand your needs and provide a level of service far and above what people expect. We are fully insured so you can have the piece of mind that all of your investments will be well taken care of. 
         </div>
@@ -284,6 +291,7 @@
     background-color: #FFF;
     width: 100vw;
     height: 90px;
+    z-index: 100;
   }
 
   header .header-title {
@@ -469,6 +477,28 @@
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
+  }
+
+  .about-us-flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-us-text {
+    width: 340px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+  }
+
+  .about-us-img {
+    max-width: 400px;
+    min-width: 350px;
+  }
+
+  .about-us-img amp-img {
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
   }
 
 </style>
