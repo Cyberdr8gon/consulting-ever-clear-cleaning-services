@@ -40,30 +40,31 @@
       </div>
     </div>
     <nav>
+      <input class="nav-mobile-hamburger nav-trigger" id="nav-trigger" type="checkbox">
+      <label for="nav-trigger"></label>
       <ul>
-        <li>
-        </li>
-        <li>
-          <a href="#services" class="services-nav-el">
+        <a href="#services" class="services-nav-el">
+          <li>
             Our Services
-          </a>
-        </li>
-        <li>
-          <a href="#about-us" class="about-us-nav-el">
+          </li>
+        </a>
+        <a href="#about-us" class="about-us-nav-el">
+          <li>
             About Us
-          </a>
-        </li>
-        <li>
-          <a href="#contact-us" class="contact-us-nav-el">
+          </li>
+        </a>
+        <a href="#contact-us" class="contact-us-nav-el">
+          <li>
             Get in Touch!
-          </a>
-        </li>
-        <li>
-          <a href="#blog" class="blog-nav-el">
+          </li>
+        </a>
+        <a href="#blog" class="blog-nav-el">
+          <li>
             Tips from The Pros
-          </a>
-        </li>
+          </li>
+        </a>
       </ul>
+      </input>
     </nav>
   </header>
   <div class="contact-banner-mobile">
@@ -367,16 +368,93 @@
     padding: 0px;
   }
 
-  header nav li a {
+  header nav a {
     text-decoration: none;
+  }
+
+  header nav a li {
     padding: 15px 30px 15px 30px;
     margin: 0;
     color: black;
   }
 
-  header nav li a:hover {
+  header nav a:hover li {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  header nav input {
+    display: none;
+  }
+
+  /* header mobile version*/
+
+  @media (max-width: 930px) {
+
+
+    nav ul {
+      position: absolute;
+      display: flex;
+      left: 0;
+      top: 75px;
+      width: 100vw;
+      background-color: black;
+      flex-direction: column;
+
+      transform: scale(1,0);
+      transform-origin: top center;
+      transition: 0.2s linear 50ms;
+
+    }
+
+    nav input:checked ~ ul {
+      transform: scale(1,1);
+      
+    }
+
+    nav ul a {
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 0;
+      margin: 0;
+      height: 100px;
+      margin-bottom: 1px;
+      width: 100%;
+      background-color: white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 160%;
+
+    }
+
+    .nav-trigger {
+      position: absolute;
+      clip: rect(0,0,0,0);
+    }
+
+    label[for="nav-trigger"] {
+      position: fixed;
+      top: 28px;
+      right: 30px;
+      z-index: 2;
+
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+      background-size: contain;
+    }
+
+    header nav a li {
+      padding: 0;
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+
   }
 
   main {
@@ -393,6 +471,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     height: 100vh;
   }
