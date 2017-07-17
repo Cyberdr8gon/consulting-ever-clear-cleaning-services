@@ -1,8 +1,13 @@
+set -e
+
 ./build.sh
 git add .
-COMMIT_MSG="auto-deploy: "
-DATE=`date +%Y-%m-%d:%H:%M:%S`
-COMMIT_MSG+=DATE
-git commit -m $COMMIT_MSG
+git -c color.status=false status \
+  | sed -n -r -e '1,/Changes to be committed:/ d' \
+              -e '1,1 d' \
+                          -e '/^Untracked files:/,$ d' \
+                                      -e 's/^\s*//' \
+                                                  -e '/./p' \
+                                                  | git commit -F -
 git push
 git push heroku master
