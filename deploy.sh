@@ -2,8 +2,7 @@ set -e
 
 ./build.sh
 git add .
-git -c color.status=false status \
-  | sed -n -r -e '1,/Changes to be committed:/ d' \ -e '1,1 d' \ -e '/^Untracked files:/,$ d' \ -e 's/^\s*//' \ -e '/./p' \
-  | git commit -F -
+DATE=`date +%Y-%m-%d:%H:%M:%S`
+git commit -m "auto-deploy:$DATE"
 git push
 git push heroku master
