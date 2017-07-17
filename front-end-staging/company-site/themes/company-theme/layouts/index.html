@@ -10,7 +10,7 @@
     {
       "@context": "http://schema.org",
       "@type": "NewsArticle",
-      "headline": "Open-source framework for publishing content",
+      "headline": "Window Cleaning Company located in Grand Junction",
       "datePublished": "2015-10-07T12:02:41Z",
       "image": [
         "logo.jpg"
@@ -67,12 +67,14 @@
       </input>
     </nav>
   </header>
-  <div class="contact-banner-mobile">
-    Contact us at 970-683-1688
-  </div>
   <main>
     <section class="splash-container">
       <div>
+        <div class="mobile-splash">
+          Phone Number: 123-456-7890
+          <br/>
+          Email: 123-456-7890
+        </div>
         <iframe id="ytplayer" type="text/html" width="500" height="281.25"
           src="https://www.youtube.com/embed/jnKCejQ3qgU?controls=0&modestbranding=1&playsinline=1"
           frameborder="0" allowfullscreen>
@@ -462,6 +464,12 @@
     margin: auto;
   }
 
+  @media (max-width: 930px) {
+    main {
+      max-width: 100vw;
+    }
+  }
+
   section:not(:first-child) {
     margin-top: 90px;
   }
@@ -474,6 +482,10 @@
     flex-wrap: wrap;
 
     height: 100vh;
+  }
+
+  .mobile-splash {
+    display: none;
   }
 
   .splash-container-text {
@@ -504,6 +516,19 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
   }
 
+  @media (max-width: 930px) {
+
+    .splash-container {
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .splash-container iframe {
+      width: 100vw;
+      height: 56vw;
+    }
+  }
 
   .services-container {
     font-family: 'Quicksand', sans-serif;
@@ -536,15 +561,29 @@
     justify-content: space-around;
   }
 
+
+  @media (max-width: 865px) {
+    .window-service-card-levels {
+      flex-direction: column;
+      align-items: center;
+      
+
+      }
+
+    .vertical-line {
+      width: 100%;
+    }
+  }
+
   .window-service-card-levels basic, .standard, .vip {
     max-width: 300px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
+
   .window-service-card-levels .basic ul, .standard ul, .vip ul {
     margin-left: 0;
-    padding-left: 0px;
     list-style-type: circle;
   }
   .vertical-line {
@@ -598,6 +637,7 @@
     align-items: center;
   }
 
+
   .about-us-text {
     width: 400px;
     background-color: white;
@@ -614,6 +654,19 @@
     box-shadow: 10px 10px 10px rgba(0,0,0,.2);
   }
 
+  @media (max-width: 1200px) {
+    .about-us-text {
+      min-width: 440px;
+      box-shadow: 10px -10px 10px rgba(0,0,0,.2);
+    }
+    
+
+    .about-us-img amp-img {
+      box-shadow: 10px 0px 10px rgba(0,0,0,.2);
+    }
+
+  }
+
   .contact-us-container {
     font-family: 'Quicksand', sans-serif;
   }
@@ -627,6 +680,16 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  @media (max-width: 1480px) {
+
+    .contact-us-conversion-point {
+      order: 1;
+    }
+    .contact-us-testimonials {
+      order: 2;
+    }
   }
 
   .contact-us-testimonials {
