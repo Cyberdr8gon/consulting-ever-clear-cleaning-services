@@ -1,11 +1,11 @@
 <!doctype html>
 <html amp lang="en">
 <head>
+  {{ .Hugo.Generator }}
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <title>Ever Clear Cleaning Service</title>
-  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" /> <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -36,7 +36,7 @@
         </div>
       </a>
       <div class="contact-banner-desktop">
-        970-683-1688
+        <a href="tel:9706831688">970-683-1688</a>
       </div>
     </div>
     <nav>
@@ -71,9 +71,9 @@
     <section class="splash-container">
       <div>
         <div class="mobile-splash">
-          Phone Number: 123-456-7890
+          Phone Number: <a href="tel:9706831688">970-683-1688</a>
           <br/>
-          Email: 123-456-7890
+          Email: <a href="mailto:lonnie@everclearwindowsgj.com">lonnie@everclearwindowsgj.com</a>
         </div>
         <iframe id="ytplayer" type="text/html" width="500" height="281.25"
           src="https://www.youtube.com/embed/jnKCejQ3qgU?controls=0&modestbranding=1&playsinline=1"
@@ -267,10 +267,12 @@
             We can give you a quote, set up a meeting, etc. 
           </p>
           <p>
-            <b>Phone number:</b> 970-683-1688
+            <b>Phone number:</b>
+            <a href="tel:9706831688">970-683-1688</a>
           </p>
           <p>
-            <b>Email:</b> lonnie@everclearwindowsgj.com
+          <b>Email:</b> 
+          <a href="mailto:lonnie@everclearwindowsgj.com">lonnie@everclearwindowsgj.com</a>
           </p>
           <p>
             <b>Business Hours:</b>
@@ -287,8 +289,8 @@
     </sections>
   </main>
   <footer>
-    <p>Phone: 970-683-1688 </p>
-    <p>Email: lonnie@everclearwindowsgj.com </p>
+    <p>Phone: <a href="tel:9706831688">970-683-1688</a></p>
+    <p>Email: <a href="mailto:lonnie@everclearwindowsgj.com">lonnie@everclearwindowsgj.com</a> </p>
     <p>Website built by Sam Bateman</p>
   </footer>
 
@@ -459,6 +461,24 @@
 
   }
 
+  @media (max-width: 450px) {
+    header .header-title h1 {
+      font-size: 120%;
+      line-height: 160%;
+    }
+
+    header .header-title h2 {
+      font-size: 80%;
+      line-height: 180%;
+    }
+  }
+
+  @media (max-width: 350px) {
+    header .header-title h1 {
+      font-size: 100%;
+    }
+  }
+
   main {
     max-width: 80vw;
     margin: auto;
@@ -528,6 +548,22 @@
       width: 100vw;
       height: 56vw;
     }
+
+    .splash-container-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    .splash-container-text-contact {
+      margin: auto;
+    }
+  }
+  @media (max-width: 450px) {
+    .splash-container iframe {
+      display: none;
+    }
+
+
   }
 
   .services-container {
@@ -621,6 +657,13 @@
     font-size: 110%;
   }
 
+
+  @media (max-width: 450px) {
+    .service-card {
+      height: 100%;
+    }
+  }
+
   .about-us-container {
     margin-top: 100px;
     font-family: 'Quicksand', sans-serif;
@@ -666,6 +709,13 @@
     }
 
   }
+  @media (max-width: 450px) {
+    .about-us-text {
+      width: 100vw;
+      min-width: 0;
+    }
+
+  }
 
   .contact-us-container {
     font-family: 'Quicksand', sans-serif;
@@ -682,19 +732,8 @@
     align-items: center;
   }
 
-  @media (max-width: 1480px) {
-
-    .contact-us-conversion-point {
-      order: 1;
-    }
-    .contact-us-testimonials {
-      order: 2;
-    }
-  }
 
   .contact-us-testimonials {
-    background-color: white;
-    width: 400px
     background-color: white;
     padding: 20px 40px 20px 35px;
     box-shadow: 10px 10px 10px rgba(0,0,0,.2);
@@ -710,6 +749,16 @@
     box-shadow: 10px 10px 10px rgba(0,0,0,.2);
     font-size: 110%;
     margin: 20px;
+  }
+
+  @media (max-width: 1480px) {
+
+    .contact-us-conversion-point {
+      order: 1;
+    }
+    .contact-us-testimonials {
+      order: 2;
+    }
   }
 
   blockquote {
@@ -743,6 +792,18 @@
    
   blockquote cite:before {
     content: "\2014 \2009";
+  }
+
+  @media (max-width: 700px) {
+
+    .contact-us-testimonials {
+      width: 100%;
+      margin: 0;
+    }
+
+    blockquote {
+      width: 100%;
+    }
   }
 
 
