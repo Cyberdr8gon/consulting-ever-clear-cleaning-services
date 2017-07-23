@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "deploy": "npm build && git add . && DATE=`date +%Y-%m-%d:%H:%M:%S` && git commit -m \"auto-deploy:$DATE\" && git push && git push heroku master",
+    "deploy": "yarn build-static && git add . && DATE=`date +%Y-%m-%d:%H:%M:%S` && git commit -m \"auto-deploy:$DATE\" && git push && git push heroku master",
     "build-static": "cd ./front-end-staging/company-site && hugo -t=company-theme && cd ../.. && cp -r ./front-end-staging/company-site/public/* ./public"
   },
   "dependencies": {
