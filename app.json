@@ -2,7 +2,7 @@
   "name": "Ever Clear Cleaning Services Website and Analytics Collection Application",
   "description": "a nodejs server that forwards analytics events to a google spreadsheet web app and serves a landing page and a blog",
   "repository": "https://github.com/Cyberdr8gon/consulting-ever-clear-cleaning-services",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started@master/public/node.svg",
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs"
 }
